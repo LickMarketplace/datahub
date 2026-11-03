@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LICK Datahub — proposition graphique</title>
+  <link rel="stylesheet" href="brand.css">
+  <style>
+    main { max-width: 1200px; margin: auto; padding: 46px 42px; }
+    .eyebrow { color: #536f80; text-transform: uppercase; letter-spacing: 2px; font-size: 10px; font-weight: 700; }
+    h1 { font-size: 32px; line-height: 1.2; letter-spacing: -.7px; margin: 10px 0 14px; }
+    p { color: #536f80; max-width: 760px; }
+    .intro { display: flex; align-items: center; justify-content: space-between; gap: 32px; margin-bottom: 30px; }
+    .palette { display: grid; grid-template-columns: repeat(5,1fr); gap: 14px; margin: 26px 0; }
+    .swatch { height: 74px; border-radius: 9px 9px 0 0; }
+    .caption { padding: 14px; }
+    .caption strong { display: block; font-size: 12px; color: #005978; }
+    .caption small { color: #536f80; font-size: 11px; }
+    .sample { margin-top: 28px; padding: 26px; display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+    .sample h2 { margin: 0 0 10px; font-size: 18px; }
+    .samples { display: flex; gap: 10px; flex-wrap: wrap; margin: 18px 0; }
+    .gradient { height: 7px; background: var(--lick-gradient); border-radius: 10px; margin-top: 38px; }
+    .footer { font-size: 11px; margin-top: 16px; }
+    @media(max-width:600px) { main { padding: 28px 18px; } h1{font-size:26px}.intro { display: block; }.palette{grid-template-columns:repeat(2,1fr)}.sample{grid-template-columns:1fr;padding:20px;gap:14px}.intro .lick-local-badge{display:inline-block;margin-top:8px} }
+  </style>
+</head>
+<body class="lick-theme">
+  <header class="lick-header">
+    <div class="lick-header-identity">
+      <img class="lick-logo" src="logo.png" alt="LICK" width="142" height="41">
+      <span class="lick-header-divider" aria-hidden="true"></span>
+      <div class="lick-header-title">DATAHUB<span class="lick-header-subtitle">L’atelier de vos produits</span></div>
+    </div>
+    <span class="lick-local-badge">Proposition graphique · en-tête & palette</span>
+  </header>
+  <main>
+    <div class="intro"><div><div class="eyebrow">Identité LICK / Direction artistique</div><h1 class="lick-section-title">Votre catalogue, aux couleurs de LICK.</h1><p>Un logo original sur fond blanc, des bleus pour structurer l’interface et des touches cyan et turquoise pour guider le regard.</p></div></div>
+    <div class="lick-notice">Aperçu esthétique uniquement. Cette page présente le style à intégrer à la maquette ; elle ne contient pas le catalogue ni les fonctions d’import.</div>
+    <section class="palette" aria-label="Palette graphique">
+      <div class="lick-card"><div class="swatch" style="background:#006c93"></div><div class="caption"><strong>Bleu LICK</strong><small>#006C93 · actions</small></div></div>
+      <div class="lick-card"><div class="swatch" style="background:#00a6e2"></div><div class="caption"><strong>Cyan</strong><small>#00A6E2 · accents</small></div></div>
+      <div class="lick-card"><div class="swatch" style="background:#005978"></div><div class="caption"><strong>Bleu profond</strong><small>#005978 · titres</small></div></div>
+      <div class="lick-card"><div class="swatch" style="background:#008c91"></div><div class="caption"><strong>Turquoise</strong><small>Déclinaison du logo</small></div></div>
+      <div class="lick-card"><div class="swatch" style="background:#c7dd39"></div><div class="caption"><strong>Citron</strong><small>#C7DD39 · ponctuation</small></div></div>
+    </section>
+    <section class="lick-card sample"><div><h2 class="lick-section-title">Des actions bien identifiées.</h2><p>Le bleu distingue l’action principale, les fonds clairs préservent la lisibilité.</p><div class="samples"><span class="lick-button lick-button-primary">Valider le contenu</span><span class="lick-button">Examiner la fiche</span></div></div><div><h2 class="lick-section-title">Une identité présente, des données lisibles.</h2><p>Logo respecté dans ses proportions, titres bleus, fonds blancs et séparateurs discrets. Les usages fonctionnels restent ceux de la maquette.</p></div></section>
+    <div class="gradient" aria-hidden="true"></div><p class="footer">Aperçu de style · aucune donnée réelle · aucune publication</p>
+  </main>
+</body>
+</html>

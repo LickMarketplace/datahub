@@ -32,7 +32,7 @@ Il ne valide pas encore les EAN ni les règles des marketplaces.
 
 Aucun service cloud ni stockage persistant n'est provisionné par ce dépôt.
 La commande check vérifie uniquement le démarrage local, pas une connexion Supabase.
-Les imports, l'IA, le remplissage Excel et l'interface restent à développer.
+Un prototype local avec import Excel/CSV, bibliothèque, règles et exports de matrices est disponible dans `maquette/`. L'enrichissement automatique et les API restent à connecter.
 
 ## Confidentialité
 Ce dépôt est public. Ne pas y ajouter de catalogue réel, document commercial ou secret.
@@ -42,3 +42,11 @@ Prévoir des sauvegardes distinctes de la base et des fichiers avant la producti
 ## Prochain jalon
 Connecter le stockage privé puis traiter une matrice, une catégorie et un échantillon
 de produits avec conservation de la source de chaque caractéristique.
+
+## Prototype Datahub
+
+Voir [la documentation du prototype](maquette/README.md) : Accueil, Catalogue, Bibliothèque, Canaux, Règles & contraintes. Les données restent dans le navigateur et les sorties préchargées doivent être conservées hors de ce dépôt public.
+
+```sh
+python maquette/build.py --output /tmp/LICK_Datahub_Vierge.html
+```

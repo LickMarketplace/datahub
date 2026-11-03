@@ -1,0 +1,11 @@
+# Only application source and the public logo enter the deployment context.
+**
+!maquette/
+!maquette/**
+!design/
+!design/lick/
+!design/lick/logo.png
+!preview/
+!preview/server.cjs
+!preview/Dockerfile
+**/__pycache__/**

@@ -1,0 +1,16 @@
+# Deployment proposal only. This file does not create or publish a service.
+# The initial interface contains no catalogue, matrices or private documents.
+services:
+  - type: web
+    name: lick-datahub-preview
+    runtime: docker
+    plan: free
+    dockerfilePath: ./preview/Dockerfile
+    dockerContext: .
+    healthCheckPath: /healthz
+    autoDeployTrigger: "off"
+    envVars:
+      - key: DATAHUB_PREVIEW_USER
+        value: lick
+      - key: DATAHUB_PREVIEW_PASSWORD
+        generateValue: true

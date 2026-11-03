@@ -1,0 +1,41 @@
+/* Identité LICK issue des couleurs explicites de la présentation fournie.
+   Ressource de présentation uniquement : aucun accès aux données ni changement métier. */
+:root {
+  --lick-ink: #333f48;
+  --lick-blue: #006c93;
+  --lick-deep: #005978;
+  --lick-cyan: #00a6e2;
+  --lick-turquoise: #008c91;
+  --lick-lime: #c7dd39;
+  --lick-background: #f4f9fc;
+  --lick-line: #dce8ef;
+  --lick-muted: #536f80;
+  --lick-gradient: linear-gradient(110deg, #283675, #006c93 48%, #00a6c1);
+  --lick-body-font: Arial, Helvetica, sans-serif;
+  --lick-title-font: Montserrat, Arial, Helvetica, sans-serif;
+}
+.lick-theme { margin: 0; color: var(--lick-ink); background: var(--lick-background); font: 14px/1.5 var(--lick-body-font); }
+.lick-theme * { box-sizing: border-box; }
+.lick-header { position: relative; min-height: 90px; padding: 22px 42px; display: flex; align-items: center; justify-content: space-between; gap: 24px; background: #fff; border-bottom: 1px solid var(--lick-line); }
+.lick-header::before { content: ''; position: absolute; inset: 0 0 auto; height: 4px; background: var(--lick-gradient); }
+.lick-header-identity { display: flex; align-items: center; gap: 25px; min-width: 0; }
+.lick-logo { display: block; width: 142px; height: auto; object-fit: contain; flex-shrink: 0; }
+.lick-header-divider { height: 33px; width: 1px; background: var(--lick-line); }
+.lick-header-title { color: var(--lick-deep); font: 700 16px/1.3 var(--lick-title-font); letter-spacing: 1.8px; }
+.lick-header-subtitle { display: block; color: var(--lick-muted); font-size: 11px; letter-spacing: 0; font-weight: 400; margin-top: 4px; }
+.lick-local-badge { padding: 6px 11px; border: 1px solid #cfe7f2; border-radius: 30px; background: #edf8fd; color: var(--lick-blue); font-size: 11px; white-space: nowrap; }
+.lick-button { display: inline-flex; align-items: center; justify-content: center; gap: 8px; border: 1px solid var(--lick-line); border-radius: 7px; padding: 10px 16px; background: #fff; color: var(--lick-deep); font: 600 13px/1.5 var(--lick-body-font); }
+.lick-button-primary { background: var(--lick-blue); color: #fff; border-color: var(--lick-blue); }
+.lick-button-primary:hover { background: var(--lick-deep); }
+.lick-button:focus-visible { outline: 3px solid var(--lick-cyan); outline-offset: 3px; }
+.lick-section-title { font-family: var(--lick-title-font); color: var(--lick-deep); }
+.lick-notice { border: 1px solid #d8ebf5; border-left: 3px solid var(--lick-cyan); background: #ebf5fb; border-radius: 8px; padding: 14px 18px; color: #365b70; }
+.lick-card { background: #fff; border: 1px solid var(--lick-line); border-radius: 10px; box-shadow: 0 4px 16px #315a7210; }
+@media (max-width: 600px) {
+  .lick-header { padding: 20px 18px; gap: 12px; flex-wrap: wrap; }
+  .lick-logo { width: 110px; }
+  .lick-header-identity { gap: 16px; }
+  .lick-header-title { font-size: 14px; }
+  .lick-header-subtitle { max-width: 155px; font-size: 10px; }
+  .lick-local-badge { font-size: 10px; }
+}

@@ -81,6 +81,9 @@ def build(args):
     for src in ['reader.js','xlsx-export.js','app.js','hub.js']:
         html=html.replace(f'<script src="{src}"></script>','<script>\n'+(root/src).read_text().replace('</script','<\\/script')+'\n</script>')
     data=seed(args.catalogue,[(p,Path(f)) for p,f in [('Boulanger',args.boulanger),('Decathlon',args.decathlon),('Orange',args.orange)] if f]) if args.catalogue else {'filename':'','headers':[],'products':[],'matrices':[]}
+    if getattr(args, 'demo', False):
+        from demo_seed import demonstration
+        data = demonstration()
     encoded=json.dumps(data,ensure_ascii=False).replace('<','\\u003c').replace('>','\\u003e').replace('&','\\u0026')
     html=html.replace('INITIAL_DATA',encoded)
     Path(args.output).parent.mkdir(parents=True,exist_ok=True)
@@ -89,5 +92,5 @@ def build(args):
 
 if __name__=='__main__':
     p=argparse.ArgumentParser(description=__doc__)
-    p.add_argument('--orange');p.add_argument('--catalogue');p.add_argument('--boulanger');p.add_argument('--decathlon');p.add_argument('--output',required=True)
+    p.add_argument('--demo', action='store_true', help='Créer une maquette avec articles et matrices fictifs, sans données commerciales.');p.add_argument('--orange');p.add_argument('--catalogue');p.add_argument('--boulanger');p.add_argument('--decathlon');p.add_argument('--output',required=True)
     build(p.parse_args())

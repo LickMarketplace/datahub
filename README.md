@@ -50,3 +50,11 @@ Voir [la documentation du prototype](maquette/README.md) : Accueil, Catalogue, B
 ```sh
 python maquette/build.py --output /tmp/LICK_Datahub_Vierge.html
 ```
+
+## Maquette navigable sans hébergement
+
+[Télécharger la maquette HTML autonome (ZIP)](https://github.com/LickMarketplace/datahub/raw/refs/heads/preview/lick-datahub/demo/LICK_Datahub_Maquette.zip).
+
+Extraire l'archive, puis ouvrir `LICK_Datahub_Maquette.html` dans un navigateur récent. Aucun compte Render ou abonnement n'est requis. Les articles et modèles fournis dans cette maquette sont fictifs et les exports de ces modèles sont bloqués. Vos imports personnels restent dans votre navigateur.
+
+Pour régénérer cette démonstration : `python maquette/build.py --demo --output demo/LICK_Datahub_Maquette.html`.

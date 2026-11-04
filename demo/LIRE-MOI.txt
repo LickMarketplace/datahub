@@ -1,0 +1,18 @@
+LICK DATAHUB — MAQUETTE NAVIGABLE
+
+1. Extraire cette archive ZIP sur votre ordinateur.
+2. Ouvrir LICK_Datahub_Maquette.html par un double-clic dans Chrome, Edge ou Firefox récent.
+3. Parcourir Accueil, Catalogue, Bibliothèque, Canaux et Règles & contraintes.
+4. Dans Catalogue, ouvrir un article avec « Examiner », modifier le titre ou le descriptif, puis valider.
+
+Aucun abonnement, hébergement Render, compte, serveur ou installation nécessaire pour cette démonstration. Le fichier contient ses styles, scripts et logo.
+
+Les six articles et les trois modèles intégrés sont FICTIFS. Ils ne doivent jamais servir à des créations produit réelles ; les exports sont bloqués sur ces modèles de démonstration.
+
+Vous pouvez importer votre propre catalogue Excel/CSV, ajouter les matrices XLSX réelles et déposer vos documents. Ces données restent dans le stockage de CE navigateur sur CET ordinateur. Elles ne sont pas envoyées sur GitHub ou à une marketplace. Les recherches et images externes ne sont consultées que sur votre action.
+
+Les modifications sont conservées par le navigateur ; elles ne réécrivent pas le fichier HTML. Télécharger régulièrement la sauvegarde complète avant de déplacer le fichier, changer de navigateur ou supprimer son stockage.
+
+Si votre navigateur professionnel bloque l'ouverture des fichiers HTML locaux ou le stockage, essayer un navigateur autorisé par votre organisation. Cette maquette n'est pas un site web hébergé et ne fournit pas de synchronisation entre utilisateurs.
+
+L'enrichissement automatique fabricant/Icecat, l'extraction automatique des notices et les connexions API restent à connecter. Les règles et exports restent à vérifier pour chaque canal.

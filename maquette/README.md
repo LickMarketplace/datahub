@@ -77,3 +77,7 @@ Aucun document réel, fichier catalogue ou matrice n'est ajouté au dépôt Git.
 `node tests/hub-browser.cjs /chemin/prive/LICK_Datahub.html /chemin/prive/resultats` avec Playwright et Chromium. `CHROMIUM_PATH` peut choisir le navigateur. Le contrôle utilise les pièces de référence de cette conversation (2 720 articles et 113 matrices) et des données synthétiques pour les écritures/export ; aucune fixture commerciale n'est incluse dans les sources.
 
 Vérifications : accueil, catalogue, persistance des corrections, bibliothèque et octets des documents, sites, règles versionnées, catégories Orange sans axe de variant, rapport et suivi, export XLSX, blocage hors liste, sauvegarde/restauration complète, mobile et erreurs JavaScript. Les fichiers exportés peuvent ensuite être relus avec `zipfile`/XML pour contrôler le ZIP, les cellules et les onglets conservés.
+
+## Démonstration sans données commerciales
+
+`python maquette/build.py --demo --output /tmp/LICK_Datahub_Maquette.html` génère une version navigable avec six articles et trois modèles entièrement fictifs. L'interface les identifie comme tels et bloque leurs exports. La démonstration utilise un stockage de navigateur séparé (`lick-datahub-demo-v1`) pour préserver celui du prototype réel. L'archive prête à ouvrir se trouve dans `demo/`. Test : `node tests/demo-browser.cjs /tmp/LICK_Datahub_Maquette.html` avec Playwright et Chromium disponibles.
